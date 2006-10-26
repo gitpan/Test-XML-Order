@@ -1,3 +1,4 @@
+# @(#) $Id$
 use strict;
 use warnings;
 use Module::Build;
@@ -13,7 +14,6 @@ my $builder = Module::Build->new(
     recommends => {
         'Test::Pod' => 0,
         'Test::Pod::Coverage' => 0,
-        'Test::Spelling' => 0,
     },
     sign           => 1,
     create_makefile_pl => 'traditional',

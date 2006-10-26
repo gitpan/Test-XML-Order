@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use Test::Builder;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 our $Test = Test::Builder->new;
 
@@ -78,7 +78,7 @@ __END__
 
 =head1 NAME
 
-Test::XML - Compare XML in perl tests
+Test::XML::Order - Compare the order of XML tags in perl tests
 
 =head1 SYNOPSIS
 
@@ -106,14 +106,35 @@ Returns true or false, depending upon test success.
 
 =item isnt_xml_in_order( GOT, MUST_NOT_BE [, TESTNAME ] )
 
-This function is similar to is_xml(), except that it will fail if GOT
-and MUST_NOT_BE are identical.
+This function is similar to is_xml_in_order(), except that it will fail if GOT
+and MUST_NOT_BE have elements in the same order.
 
 =back
 
 =head1 NOTES
 
-=over
+Please note the following about Test::XML.
+
+=over 4
+
+=item *
+
+The package does not check that the input is well formed XML.  You should use C<Test::XML> or a
+similar package if you want to make sure the XML is well formed.
+
+=item *
+
+Only the order of tags are checked, so
+
+  is_xml_in_order('<a a="b"/>x<b></b>', '<a/><b a="c">asdf</b>');
+  
+passes as the inputs have the same order: '<a/><b/>'.
+
+=item *
+
+The tree structure is tested so the the test below passes.
+
+  isnt_xml_in_order('<a><b/></a>', '<a/><b/>');
 
 =back
 

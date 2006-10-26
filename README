@@ -2,7 +2,7 @@ NAME
     Test::XML::Order - Compare the order of XML tags in perl tests
 
 SYNOPSIS
-      use Test::XML tests => 3;
+      use Test::XML::Order tests => 3;
       is_xml_in_order( '<foo /><foo />', '<foo></foo><foo x="a"/>' );   # PASS
       is_xml_in_order( '<foo /><bar />', '<bar /><foo />' );       # FAIL
       isnt_xml_in_order( '<foo /><bar />', '<bar /><foo />' );     # PASS
@@ -24,7 +24,7 @@ FUNCTIONS
         fail if GOT and MUST_NOT_BE have elements in the same order.
 
 NOTES
-    Please note the following about Test::XML.
+    Please note the following about Test::XML::Order.
 
     *   The package does not check that the input is well formed XML. You
         should use "Test::XML" or a similar package if you want to make sure

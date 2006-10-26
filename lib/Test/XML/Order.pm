@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use Test::Builder;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 our $Test = Test::Builder->new;
 
@@ -82,7 +82,7 @@ Test::XML::Order - Compare the order of XML tags in perl tests
 
 =head1 SYNOPSIS
 
-  use Test::XML tests => 3;
+  use Test::XML::Order tests => 3;
   is_xml_in_order( '<foo /><foo />', '<foo></foo><foo x="a"/>' );   # PASS
   is_xml_in_order( '<foo /><bar />', '<bar /><foo />' );       # FAIL
   isnt_xml_in_order( '<foo /><bar />', '<bar /><foo />' );     # PASS
@@ -113,7 +113,7 @@ and MUST_NOT_BE have elements in the same order.
 
 =head1 NOTES
 
-Please note the following about Test::XML.
+Please note the following about Test::XML::Order.
 
 =over 4
 

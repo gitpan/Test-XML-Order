@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use Test::Builder;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 our $Test = Test::Builder->new;
 
@@ -148,7 +148,7 @@ G. Allen Morris III, E<lt>gam3 (at) gam3.netE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2006 by G. Allen Morris III
+Copyright 2007 by G. Allen Morris III
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

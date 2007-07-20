@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.44.
+signed via the Module::Signature module, version 0.55.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -17,11 +17,11 @@ Hash: SHA1
 SHA1 33a8a2399f90934b8dc396993775b446bd43b838 Build.PL
 SHA1 f9fac208befb8759fceea707484c19b4c6fd37db Changes
 SHA1 442f3ea059bbdca1375cf5fbf00f4b9a377e0866 MANIFEST
-SHA1 b9d1a43e0e2152458ec26eea50dd1e17cb365a51 META.yml
-SHA1 08fc14c72958a876aac94e8a4679063118e83080 Makefile.PL
-SHA1 f61c8f3da212dfa5b7804d7d28da197406d42f83 README
+SHA1 44f281cc4492269ebf00ab152ebca2392f58cc53 META.yml
+SHA1 0742e211afae99f1796888ade242ed9d37d90103 Makefile.PL
+SHA1 437d4096e26f15eed2390525281644e2ec36d72b README
 SHA1 19f2af172684d0e1728a9273c62ff68408afe63e examples/notes.t
-SHA1 3d668fd13ff8145c8c4deb4d523dff078b394f87 lib/Test/XML/Order.pm
+SHA1 7641c23ab5968069b4b3113fb64d7b5770025c93 lib/Test/XML/Order.pm
 SHA1 06b46fff039aa6205c13a77c10bec9ea05537bf4 t/1.t
 SHA1 79366cb0b2ef27231db637bf623d6e19ea14d980 t/coverage.t
 SHA1 59612f5befd87e4f9ab8d6eb01aab5a3d3963d8e t/example.t
@@ -30,9 +30,9 @@ SHA1 f8bd63b0fb73e08a69aab235e1996c75e90a21c5 t/pod.t
 SHA1 14bb4e38c7fdc752065e19a4a025c62965eb2068 t/t1.t
 SHA1 b4b675e89c15e3305767fcf37ab78b86817fb316 t/t2.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.3 (GNU/Linux)
+Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFFTUHGliSr/X1H0FwRAogCAKDkrcQQVXfjZNxLkn0QWJBu7otTKwCfV1Pq
-jGiPGuCSIAUsIGMqdr7j9ys=
-=oCtc
+iD8DBQFGoLr4liSr/X1H0FwRAqF3AJ4u5AlhEe72rAejE7j8F40fQVdlZgCgnDbW
+ktZIy8XnfyF+zyVqWY5FCZc=
+=CDNZ
 -----END PGP SIGNATURE-----

@@ -6,6 +6,7 @@ WriteMakefile
           'VERSION_FROM' => 'lib/Test/XML/Order.pm',
           'PREREQ_PM' => {},
           'INSTALLDIRS' => 'site',
+          'EXE_FILES' => [],
           'PL_FILES' => {}
         )
 ;

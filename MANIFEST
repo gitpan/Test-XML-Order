@@ -7,7 +7,6 @@ MANIFEST			This list of files
 META.yml
 README
 t/1.t
-t/coverage.t
 t/example.t
 t/order.t
 t/pod.t

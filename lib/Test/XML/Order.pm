@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use Test::Builder;
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 our $Test = Test::Builder->new;
 

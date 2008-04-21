@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use Test::Builder;
 
-our $VERSION = '0.08';
+our $VERSION = '1.00';
 
 our $Test = Test::Builder->new;
 
@@ -79,6 +79,10 @@ __END__
 =head1 NAME
 
 Test::XML::Order - Compare the order of XML tags in perl tests
+
+=head1 VERSION
+
+Version 1.00
 
 =head1 SYNOPSIS
 

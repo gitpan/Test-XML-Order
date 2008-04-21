@@ -1,11 +1,7 @@
 use Test::More;
 
-eval 'use Test::Pod::Coverage 1.00;';
-if ($@) {
-    plan skip_all => 'Test::Pod::Coverage 1.00 required for testing POD coverage';
-} else {
-    plan tests => 1;
-}
+eval "use Test::Pod::Coverage";
+plan skip_all => "Test::Pod::Coverage required for testing pod coverage" if $@;
 
-ok(1, q(use "Build testpod" for this test));
+all_pod_coverage_ok();
 

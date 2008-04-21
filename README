@@ -1,6 +1,9 @@
 NAME
     Test::XML::Order - Compare the order of XML tags in perl tests
 
+VERSION
+    Version 1.00
+
 SYNOPSIS
       use Test::XML::Order tests => 3;
       is_xml_in_order( '<foo /><foo />', '<foo></foo><foo x="a"/>' );   # PASS

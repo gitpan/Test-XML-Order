@@ -2,7 +2,7 @@ NAME
     Test::XML::Order - Compare the order of XML tags in perl tests
 
 VERSION
-    Version 1.00
+    Version 1.01
 
 SYNOPSIS
       use Test::XML::Order tests => 3;
@@ -36,7 +36,7 @@ NOTES
     *   Only the order of tags are checked, so
 
           is_xml_in_order('<a a="b"/>x<b></b>', '<a/><b a="c">asdf</b>');
-  
+
         passes as the inputs have the same order: '<a/><b/>'.
 
     *   The tree structure is tested so the the test below passes.

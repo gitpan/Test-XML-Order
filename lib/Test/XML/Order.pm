@@ -7,7 +7,7 @@ use warnings;
 use Carp;
 use Test::Builder;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 our $Test = Test::Builder->new;
 
@@ -44,11 +44,12 @@ sub _transform
 sub is_xml_in_order($$@)
 {
     my ($input, $expected, $test_name) = @_;
-    my $input_1 = _transform($input); 
-    my $expected_1 = _transform($expected); 
 
     croak "usage: is_xml_in_order(input,expected,test_name)"
         unless defined $input && defined $expected;
+
+    my $input_1 = _transform($input); 
+    my $expected_1 = _transform($expected); 
 
     $Test->ok( 1, $test_name );
     return 1;
@@ -57,10 +58,11 @@ sub is_xml_in_order($$@)
 sub isnt_xml_in_order($$@)
 {
     my ($input, $expected, $test_name) = @_;
-    my $input_1 = _transform($input); 
-    my $expected_1 = _transform($expected); 
     croak "usage: isnt_xml_in_order(input,expected,test_name)"
         unless defined $input && defined $expected;
+
+    my $input_1 = _transform($input); 
+    my $expected_1 = _transform($expected); 
 
     my $ret = 1;
 
@@ -82,7 +84,7 @@ Test::XML::Order - Compare the order of XML tags in perl tests
 
 =head1 VERSION
 
-Version 1.00
+Version 1.01
 
 =head1 SYNOPSIS
 

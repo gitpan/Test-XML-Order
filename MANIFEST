@@ -13,4 +13,5 @@ t/pod.t
 t/pod_coverage.t
 t/t1.t
 t/t2.t
+t/t3.t
 SIGNATURE    Added here by Module::Build
